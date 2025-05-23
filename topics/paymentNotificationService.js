@@ -17,7 +17,9 @@ const receivemessages = async () => {
       (msg) => {
         if (msg !== null) {
           console.log(
-            `[Payment Notification] msg was consumed! with routing key as ${msg.fields.routingKey} and content as${msg.content.toString()}`
+            `[Payment Notification] msg was consumed! with routing key as ${
+              msg.fields.routingKey
+            } and content as${msg.content.toString()}`
           );
           channel.ack(msg);
         }

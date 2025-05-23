@@ -6,7 +6,6 @@ const sendMessage = async (routingKey, message) => {
     const channel = await connection.createChannel();
     const exchange = "notification_exchange";
     const exchangeType = "topic";
-
     await channel.assertExchange(exchange, exchangeType, { durable: false });
 
     channel.publish(
