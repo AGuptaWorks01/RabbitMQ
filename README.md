@@ -1,6 +1,3 @@
-Sure! Here’s a basic README template for your RabbitMQ repository. Please let me know if you want to add specific details or sections.
-
-````markdown name=README.md
 # RabbitMQ
 
 This repository contains resources and code related to RabbitMQ.
